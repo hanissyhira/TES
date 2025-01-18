@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <title>Pakej Website</title>
+ <style>
+ * {
+ box-sizing: border-box;
+ margin: 0;
+ padding: 0;
+ }
+ body {
+ font-family: Arial, sans-serif;
+ background-color: #c2d6f6;
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ min-height: 100vh;
+ flex-direction: column;
+ }
+ /* Header Navigation */
+ .header {
+ width: 100%;
+ background-color: #0073CF;
+ padding: 15px 0;
+ color: white;
+ text-align: center;
+ }
+ .header a {
+ color: white;
+ margin: 0 15px;
+ text-decoration: none;
+ font-weight: bold;
+ }
+ .header a:hover {
+ text-decoration: underline;
+ }
+ /* Container */
+ .container {
+ text-align: center;
+ padding: 20px;
+ }
+ .container h2 {
+ color: #333;
+ font-size: 1.8em;
+ margin-bottom: 5px;
+ }
+ .container p {
+ color: #777;
+ margin-bottom: 20px;
+ }
+ /* Packages */
+.packages {
+ display: flex;
+ justify-content: center;
+ max-width: 1000px;
+ gap: 10px;
+ }
+ .package {
+ width: 23%;
+ background-color: #fff;
+ border: 1px solid #ddd;
+ border-radius: 8px;
+ padding: 20px;
+ position: relative;
+ text-align: center;
+ box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+ }
+ .package h3 {
+ margin: 0;
+ font-size: 1.2em;
+ background-color: #333;
+ color: white;
+ padding: 10px;
+ border-radius: 4px 4px 0 0;
+ }
+ .package h3.blue {
+ background-color: #00C0FF;
+ }
+ .package .price {
+ font-size: 2em;
+ color: #333;
+ margin: 15px 0;
+ }
+ .package p {
+ margin: 5px 0;
+ color: #666;
+ font-weight: bold;
+ }
+ .package p span {
+ color: black;
+ }
+ .button {
+ display: inline-block;
+ padding: 10px 20px;
+ margin-top: 20px;
+ font-weight: bold;
+ color: #333;
+ text-decoration: none;
+ border: 2px solid #333;
+ border-radius: 5px;
+ }
+ .button-yellow {
+ background-color: #FFD700;
+ color: black;
+ border: none;
+}
+ .popular {
+ position: absolute;
+ top: -10px;
+ right: -10px;
+ background-color: #BADA55;
+ color: black;
+ padding: 5px 10px;
+ transform: rotate(-45deg);
+ font-size: 0.8em;
+ font-weight: bold;
+ }
+ </style>
+</head>
+<body>
+ <!-- Header Navigation -->
+ <div class="header">
+ <a href="#">INTRO</a>
+ <a href="#">FEATURES</a>
+ <a href="#">OVERVIEW</a>
+ <a href="#">REVIEWS</a>
+ <a href="#">PRICING</a>
+ <a href="#">FAQS</a>
+ <a href="#">TRIAL</a>
+ </div>
+ <!-- Main Content -->
+ <div class="container">
+ <h2>Pakej Website</h2>
+ <p>Berikut ialah pakej ikut kesesuaian anda.</p>
+ <div class="packages">
+ <!-- Package 1 -->
+ <div class="package">
+ <h3>RAHMAH</h3>
+ <div class="price">RM990</div>
+ <p><span>1GB</span> Disk Space</p>
+ <p><span>5GB</span> Monthly Bandwidth</p>
+ <p><span>2</span> Email Accounts</p>
+ <p><span>Tiada</span> subdomains</p>
+ <a href="#" class="button">DAPATKAN SEKARANG</a>
+ </div>
+ <!-- Package 2 -->
+ <div class="package">
+ <h3>WEB SYARIKAT</h3>
+ <div class="price">RM2,990</div>
+ <p><span>10GB</span> Disk Space</p>
+ <p><span>20GB</span> Monthly Bandwidth</p>
+ <p><span>10</span> Email Accounts</p>
+ <p><span>Unlimited</span> subdomains</p>
+ <a href="#" class="button">DAPATKAN SEKARANG</a>
+ </div>
+<!-- Package 3 -->
+ <div class="package">
+ <h3 class="blue">BUTIK ONLINE</h3>
+ <div class="price">RM5,990</div>
+ <div class="popular">Popular</div>
+ <p><span>30GB</span> Disk Space</p>
+ <p><span>50GB</span> Monthly Bandwidth</p>
+ <p><span>20</span> Email Accounts</p>
+ <p><span>Unlimited</span> subdomains</p>
+ <a href="#" class="button button-yellow">DAPATKAN SEKARANG</a>
+ </div>
+ <!-- Package 4 -->
+ <div class="package">
+ <h3>PREMIUM</h3>
+ <div class="price">RM9,990</div>
+ <p><span>100GB</span> Disk Space</p>
+ <p><span>50GB</span> Monthly Bandwidth</p>
+ <p><span>20</span> Email Accounts</p>
+ <p><span>Unlimited</span> subdomains</p>
+ <a href="#" class="button">DAPATKAN SEKARANG</a>
+ </div>
+ </div>
+ </div>
+</body>
+</html>

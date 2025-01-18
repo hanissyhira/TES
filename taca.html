@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Laman Web Saya</title>
+    <style>
+        /* CSS Styles */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #D2B48C;
+        }
+        header {
+            background-color:#000000;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+        header h1 {
+            margin: 0;
+        }
+        nav {
+            display: flex;
+            justify-content: center;
+            margin-top: 10px;
+        }
+        nav a {
+            color: white;
+            padding: 10px 20px;
+            text-decoration: none;
+        }
+        nav a:hover {
+            background-color: #E6C8F1;
+        }
+        section {
+            margin: 20px auto;
+            padding: 20px;
+            background-color: white;
+            border-radius: 8px;
+            width: 80%;
+            max-width: 800px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        h2 {
+            border-bottom: 2px solid #333;
+            padding-bottom: 10px;
+        }
+        img {
+            display: block;
+            margin: 10px auto;
+            max-width: 150px;
+            border-radius: 0%;
+        }
+        footer {
+            text-align: center;
+            padding: 10px;
+            background-color: #333;
+            color: white;
+            margin-top: 20px;
+        }
+
+	
+        /* Gallery Styles */
+        .image-container {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr); /* 3 columns per row */
+            gap: 20px; /* Space between images */
+            max-width: 1000px; /* Limit gallery width */
+            margin: 0 auto; /* Center the grid */
+        }
+
+        .image-container img {
+            width: 100%;
+            height: 300px;
+            object-fit: cover; /* Crop and maintain aspect ratio */
+            border-radius: 15px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease;
+        }
+
+        .image-container img:hover {
+            transform: scale(1.05);
+        }
+
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Welcome To My Personal Website</h1>
+        <nav>
+            <a href="#biodata">Biodata</a>
+            <a href="#experience">Experience</a>
+            <a href="#education">Education</a>
+            <a href="#family">Family</a>
+            <a href="#gallery">Gallery</a>
+            <a href="#audio-video">Audio & Video</a>
+            <a href="#contact">Contact Me</a>
+        </nav>
+    </header>
+
+    <section id="biodata">
+        <img src="ca.jpg" alt="Profile Picture">
+         <h2>Biodata</h2>
+        <p>Name: Nur Shahira Natasya Binti Shah Rizal Yuzman</p>
+        <p>Age: 20 years old</p>
+        <p>Phone Number: 01111024585</p>
+    </section>
+
+    <section id="experience">
+        <h2>Experience</h2>
+        <ul>
+            <li>Internship at Jabatan Pendidikan Negeri Terengganu</li>
+        </ul>
+    </section>
+
+    <section id="education">
+        <h2>Education</h2>
+ 
+        <p>Diploma of Information Management in UiTM Cawangan Kelantan </p>
+    </section>
+
+    <section id="family">
+        <h2>Family</h2>
+        <p><strong>Father:</strong> Shah Rizal Yuzman Bin Abdul Rahman</p>
+        <p><strong>Mother:</strong> Nor Idayu Binti Hasan</p>
+	
+	<h3>Siblings:</h3>
+    <ul style="line-height: 1.5;">
+        <li>Nur Ainisa Laiqah Aleeda Binti Mohd Azmi (Eldest Sister)</li>
+        <li>Faatimatuzzahraa Binti Shah Rizal Yuzman (Younger Sister)</li>
+       
+    </ul>
+	
+    </section>
+
+    <section id="gallery">
+        <h2>Gallery</h2>
+        <div class="image-container">
+        <img src="images/ca1.jpg" alt="Photo 1">
+        <img src="images/ca2.jpg" alt="Photo 2">
+        <img src="images/ca3.jpg" alt="Photo 3">
+        <img src="images/ca4.jpg" alt="Photo 4">
+        <img src="images/ca5.jpg" alt="Photo 5">
+        <img src="images/ca6.jpg" alt="Photo 6">
+    </div>
+    </section>
+
+    <section id="audio-video">
+        <h2>Audio & Video</h2>
+       <audio controls autoplay>
+ 	<source src="01. Feel Special.mp3" type="audio/mpeg">
+	Your browser does not support the audio element.
+</audio>
+        <video width="200" controls>
+ <source src="Agatha All Along - Midseason Trailer.mp4" type= "video/mp4">
+</video>
+    </section>
+
+    <section id="contact">
+        <h2>Contact Me</h2>
+        <form>
+            <label for="username">Username:</label>
+            <input type="text" id="username" name="username"><br><br>
+            <label for="message">Message:</label><br>
+            <textarea id="message" name="message" rows="4"></textarea><br><br>
+            <input type="submit" value="Hantar">
+        </form>
+    </section>
+
+    <footer>
+        © 2024 Laman Web Saya. Hak cipta terpelihara.
+    </footer>
+</body>
+</html>
